@@ -26,14 +26,14 @@ $configs = array(
     'max_try' => 5,
     'export' => array(
         'type' => 'db', 
-        'conf' => array(
-            'host'  => 'localhost',
-            'port'  => 3306,
-            'user'  => 'root',
-            'pass'  => '',
-            'name'  => 'demo',
-        ),
-        'table' => '360ky',
+//        'conf' => array(
+//            'host'  => 'localhost',
+//            'port'  => 3306,
+//            'user'  => 'root',
+//            'pass'  => '',
+//            'name'  => 'phpspider',
+//        ),
+        'table' => '360ky_content',
     ),
 //    'export' => array(
 //        'type' => 'csv',

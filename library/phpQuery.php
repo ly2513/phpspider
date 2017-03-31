@@ -485,11 +485,13 @@ class DOMDocumentWrapper {
 			? strtolower($matches[2])
 			: null;
 	}
+	
 	/**
 	 * Repositions meta[type=charset] at the start of head. Bypasses DOMDocument bug.
 	 *
 	 * @link http://code.google.com/p/phpquery/issues/detail?id=80
-	 * @param $html
+	 * @param $markup
+	 * @return string|void
 	 */
 	protected function charsetFixHTML($markup) {
 		$matches = array();

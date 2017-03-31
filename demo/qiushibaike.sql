@@ -25,7 +25,7 @@
 
 DROP TABLE IF EXISTS `content`;
 
-CREATE TABLE `content` (
+CREATE TABLE `qiushibaike_content` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `depth` int(11) DEFAULT NULL,
   `url` varchar(200) DEFAULT NULL,
