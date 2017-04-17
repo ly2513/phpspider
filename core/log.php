@@ -15,7 +15,7 @@ class log
 {
     public static $log_show = false;
     public static $log_type = false;
-    public static $log_file = "data/2017_04_17.log";
+    public static $log_file = PATH_DATA . '/2017_04_17.log';
     public static $out_sta  = "";
     public static $out_end  = "";
 
@@ -74,7 +74,6 @@ class log
         if (self::$log_show) {
             echo $msg;
         }
-        var_dump(file_exists(self::$log_file));
         is_file(self::$log_file) or touch(self::$log_file);
         file_put_contents(self::$log_file, $msg, FILE_APPEND | LOCK_EX);
     }
@@ -96,8 +95,8 @@ class log
             echo $msg;
         }
         //file_put_contents(PATH_DATA."/log/".strtolower($log_type).".log", $msg, FILE_APPEND | LOCK_EX);
-//        file_put_contents(self::$log_file, $msg, FILE_APPEND | LOCK_EX);
-                file_put_contents(PATH_DATA . "/log/error.log", $msg, FILE_APPEND | LOCK_EX);
+        //        file_put_contents(self::$log_file, $msg, FILE_APPEND | LOCK_EX);
+        file_put_contents(PATH_DATA . "/log/error.log", $msg, FILE_APPEND | LOCK_EX);
     }
 
 }
