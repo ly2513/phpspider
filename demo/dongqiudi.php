@@ -18,7 +18,7 @@ $selector = [
     "//div[contains(@class,'detail')]//div",
     "//div[@id='comment']//div[contains(@class,'comFrame')]//ol[@id='top_comment']//li"
 ];
-for ($i = 30585; $i < 31400; $i++) {
+for ($i = 31400; $i < 315612; $i++) {
     $url = 'http://www.dongqiudi.com/article/' . $i;
     //        $url  = 'http://www.dongqiudi.com/article/' . 21032;
     $html = requests::get($url);
